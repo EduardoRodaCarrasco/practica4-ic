@@ -9,7 +9,7 @@ public class CalculadoraTest {
 
     @Test
     public void testSumar() {
-        //ERROR
+        //ERROR 1
         assertEquals(10.0, calc.sumar(2, 3), 0.0001, "2 + 3 debe ser 5");
     }
 
@@ -38,7 +38,7 @@ public class CalculadoraTest {
     
     @Test
     public void testEsPar() {
-        // ERROR
+        // ERROR 2
         assertTrue(calc.esPar(5), "5 debería ser considerado par");
     }
 }
