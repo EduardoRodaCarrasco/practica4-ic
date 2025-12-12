@@ -9,8 +9,8 @@ public class CalculadoraTest {
 
     @Test
     public void testSumar() {
-        
-        assertEquals(5.0, calc.sumar(2, 3), 0.0001, "2 + 3 debe ser 5");
+        //ERROR
+        assertEquals(10.0, calc.sumar(2, 3), 0.0001, "2 + 3 debe ser 5");
     }
 
     @Test
@@ -25,7 +25,6 @@ public class CalculadoraTest {
 
     @Test
     public void testDividirPorCero() {
-        
         Exception exception = assertThrows(IllegalArgumentException.class, () -> {
             calc.dividir(10, 0);
         });
@@ -39,7 +38,7 @@ public class CalculadoraTest {
     
     @Test
     public void testEsPar() {
-        assertTrue(calc.esPar(4));
-        assertFalse(calc.esPar(5));
+        // ERROR
+        assertTrue(calc.esPar(5), "5 debería ser considerado par");
     }
 }
