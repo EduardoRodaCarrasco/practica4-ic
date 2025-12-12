@@ -6,6 +6,11 @@ on:
   pull_request:
     branches: [ "main" ]
 
+# NUEVO: Damos permisos explícitos al robot para escribir paquetes
+permissions:
+  contents: read
+  packages: write
+
 jobs:
   build-and-analyze:
     runs-on: ubuntu-latest
@@ -22,6 +27,7 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: 'maven'
+        server-id: github # Conecta con el <id>github</id> de tu pom.xml
 
     - name: Build and Analyze
       env:
