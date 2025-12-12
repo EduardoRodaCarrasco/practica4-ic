@@ -36,4 +36,14 @@
       </plugin>
     </plugins>
   </build>
+  
+ 
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>GitHub Packages</name>
+      <url>https://maven.pkg.github.com/EduardoRodaCarrasco/practica4-ic</url>
+    </repository>
+  </distributionManagement>
+  
 </project>
